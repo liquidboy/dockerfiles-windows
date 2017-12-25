@@ -10,8 +10,10 @@ Build it:
 
 ```
 $ cd java-8
-$ docker build -t oracle/serverjre:8-windowsservercore -f windowsservercore/Dockerfile .
-$ docker build -t oracle/serverjre:8-nanoserver -f nanoserver/Dockerfile .
+$ docker build -t jose/oracle/serverjre:java8servercore -f windowsservercore/Dockerfile .
+$ docker build -t jose/oracle/serverjre:java8nanoserver-insider -f nanoserver/Dockerfile .
+$ docker build -t jose/keycloak:3.4.2 -f nanoserver/Dockerfile .
+$ docker build -t jose/opendj:3.0.1 -f nanoserver/Dockerfile .
 ```
 
 ## Java 7
@@ -21,6 +23,6 @@ Build it:
 ```
 $ cd java-7
 $ tar xzf server-jre-7u80-windows-x64.tar.gz
-$ docker build -t oracle/serverjre:7-windowsservercore -f windowsservercore/Dockerfile .
-$ docker build -t oracle/serverjre:7-nanoserver -f nanoserver/Dockerfile .
+$ docker build -t jose/oracle/serverjre:java7servercore -f windowsservercore/Dockerfile .
+$ docker build -t jose/oracle/serverjre:java7nanoserver-insider -f nanoserver/Dockerfile .
 ```
