@@ -8,14 +8,14 @@ Build a Docker image containing PostgreSQL
 Build it:
 
 ```
-    docker build -t jose/postgresql:latest  -f windowsservercore/Dockerfile .
+    docker build -t jose/postgresql/servercore-1709:latest  -f windowsservercore/Dockerfile .
 ```
 
 
 Run it on HOST:
 
 ```
-    docker run -p 5432:5432 -i --name postgresql jose/postgresql:latest c:\postgresql\Run-Docker.bat postgres Password123 postgresql 5432 "http://get.enterprisedb.com/postgresql/postgresql-9.3.5-1-windows-x64.exe"
+    docker run -p 5432:5432 -i --name postgresql jose/postgresql/servercore-1709:latest c:\postgresql\Run-Docker.bat postgres Password123 postgresql 5432 "http://get.enterprisedb.com/postgresql/postgresql-9.3.5-1-windows-x64.exe"
 ```
 
 Test it :
