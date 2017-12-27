@@ -16,3 +16,10 @@ $ docker build -t jose/keycloak:3.4.2 -f nanoserver/Dockerfile .
 $ docker build -t jose/opendj/nanoserver:3.0.1 -f nanoserver/Dockerfile .
 $ docker build -t jose/opendj/nanoserver:3.0.1b -f nanoserver/Dockerfile .
 ```
+
+
+Run it: 
+
+```
+docker run -p 8080:8080 --name keycloak jose/keycloak:3.4.2 c:\keycloak-3.4.2\bin\standalone.bat
+```
