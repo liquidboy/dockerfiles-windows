@@ -17,4 +17,4 @@ ADD $LDAP_PKG $LDAP_HOME
 # ENTRYPOINT ["tail", "-f", "/dev/null"]
 
 # keep container running and command showing  https://stackoverflow.com/questions/36206906/docker-how-to-execute-a-batch-file-when-container-starts-and-keep-the-user-in-c
-CMD c:\ldap\dev\install_opendj.bat && cmd
+# CMD c:\ldap\dev\install_opendj.bat && cmd
