@@ -7,3 +7,4 @@
 /keycloak/*.gz
 /opendj/jdk1.8.0_152/*
 /opendj/OpenDJ-3.0.1/*
+/postgresql/jdk1.8.0_152/*
