@@ -9,13 +9,24 @@ Build it:
 
 ```
     docker build -t jose/postgresql/servercore-1709:latest  -f windowsservercore/Dockerfile .
+    docker build -t jose/postgresql/nanoserver-1709:latest  -f nanoserver/Dockerfile.1709 .
+    docker build -t jose/postgresql/nanoserver-insider:latest  -f nanoserver/Dockerfile .
 ```
 
 
 Run it on HOST:
 
 ```
-    docker run -p 5432:5432 -i --name postgresql jose/postgresql/servercore-1709:latest c:\postgresql\Run-Docker.bat postgres Password123 postgresql 5432 "http://get.enterprisedb.com/postgresql/postgresql-9.3.5-1-windows-x64.exe"
+    # original download url "http://get.enterprisedb.com/postgresql/postgresql-9.3.5-1-windows-x64.exe"
+
+    docker run -p 5432:5432 -td --name postgresql jose/postgresql/servercore-1709:latest c:\postgresql\Run-Docker.bat postgres Password123 postgresql 5432 "http://s3-ap-southeast-2.amazonaws.com/public-libs/postgresql-9.3.5-1-windows-x64.exe"
+
+    docker run -p 5432:5432 -td --name postgresql jose/postgresql/servercore-1709:latest c:\postgresql\Run-Docker.bat postgres Password123 postgresql 5432 "https://s3-ap-southeast-2.amazonaws.com/public-libs/postgresql-9.6.6-3-windows-x64.exe"
+
+    docker run -p 5432:5432 -td --name postgresql jose/postgresql/servercore-1709:latest c:\postgresql\Run-Docker.bat postgres Password123 postgresql 5432 "https://s3-ap-southeast-2.amazonaws.com/public-libs/postgresql-10.1-3-windows-x64.exe"
+
+    docker run -p 5432:5432 -td --name postgresql jose/postgresql/nanoserver-1709:latest c:\postgresql\Run-Docker.bat postgres Password123 postgresql 5432 "https://s3-ap-southeast-2.amazonaws.com/public-libs/postgresql-10.1-3-windows-x64.exe"
+
 ```
 
 Test it :
@@ -33,3 +44,7 @@ Test it :
         pwd  : Password123
 
 ```
+
+
+
+raw sql for orleans - https://raw.githubusercontent.com/dotnet/orleans/d1794867a176d9c479a49a13d3758f26265d9b1c/src/OrleansSQLUtils/CreateOrleansTables_PostgreSql.sql

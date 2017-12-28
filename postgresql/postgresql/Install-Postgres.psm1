@@ -69,7 +69,7 @@ You need to have administrative permissions to run this script.
         [Alias('Password')][String]$pgPassword,
 
         [Parameter(Mandatory=$false)]
-        [Alias('InstallerUrl')][String]$pgKitSource="http://get.enterprisedb.com/postgresql/postgresql-9.3.5-1-windows-x64.exe",
+        [Alias('InstallerUrl')][String]$pgKitSource="https://s3-ap-southeast-2.amazonaws.com/public-libs/postgresql-10.1-3-windows-x64.exe",
 
         [Parameter(Mandatory=$false)]
         [Alias('InstallPath')][String]$pgInstallPath="C:\Program Files\PostgreSQL\9.3",
