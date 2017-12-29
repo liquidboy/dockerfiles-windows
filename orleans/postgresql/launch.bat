@@ -1,0 +1,2 @@
+cmd docker run -p 5432:5432 -td --name orleans-postgresql jose/orleans/postgresql:latest c:\orleans\Run-Orleans.bat postgres Password123 postgresql 5432  "https://s3-ap-southeast-2.amazonaws.com/public-libs/postgresql-10.1
+-3-windows-x64.exe" "orleans"
