@@ -1,1 +1,0 @@
-cmd docker run -p 389:389 -p 4444:4444 -td --name opendj jose/opendj/servercore-1709:3.0.1 c:\ldap\dev\Run-OpenDJ.bat "admin" "Password123" "389" "4444" "josedomain"
