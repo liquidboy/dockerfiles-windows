@@ -5,7 +5,7 @@ SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPref
 ENV chocolateyUseWindowsCompression false
 
 RUN iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1')); \
-    choco install -y git -params "/GitAndUnixToolsOnPath"
+choco install -y git -params "/GitAndUnixToolsOnPath"
 
 RUN git --version --build-options
 RUN cmd.exe /c ver
