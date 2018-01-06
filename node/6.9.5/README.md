@@ -2,9 +2,37 @@
 
 A Windows Server Core Docker container image with Node.js 6.9.5 installed.
 
-## Building
+
+## Building WindowsCore version
 
 ```
-docker build -t node .
-docker tag node:latest node:6.9.5
+docker build -t jose/node -f Dockerfile .
+```
+
+
+### Building Nanoserverd version
+
+```
+docker build -t jose/node -f nano/Dockerfile .
+```
+
+
+
+### Run it on HOST:
+
+```
+    docker run -p 5432:5432 -td --name node-1 jose/node:latest
+```
+
+
+
+### Test it :
+
+```
+    get ip address of running container :  
+
+        docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" node-1
+
+
+
 ```

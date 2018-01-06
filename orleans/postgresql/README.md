@@ -9,7 +9,7 @@ Build a Docker image containing ORLEANS BITS ONTOP OF POSTGRESS
 Build it:
 
 ```
-    docker build -t jose/orleans/postgresql:latest  -f windowsservercore/Dockerfile .
+    docker build -t jose/orleans/postgresql:latest -f windowsservercore/Dockerfile .
 ```
 
 
