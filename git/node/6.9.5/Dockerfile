@@ -1,4 +1,4 @@
-FROM microsoft/windowsservercore:10.0.14393.1770
+FROM jose/node/servercore:latest
 
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
 

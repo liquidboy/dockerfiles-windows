@@ -6,14 +6,14 @@ A Windows Server Core Docker container image with Node.js 6.9.5 installed.
 ## Building WindowsCore version
 
 ```
-docker build -t jose/node -f Dockerfile .
+docker build -t jose/node/servercore -f Dockerfile .
 ```
 
 
 ### Building Nanoserverd version
 
 ```
-docker build -t jose/node -f nano/Dockerfile .
+docker build -t jose/node/nanoserver -f nano/Dockerfile .
 ```
 
 
