@@ -8,9 +8,9 @@ Build a Docker image containing PostgreSQL
 Build it:
 
 ```
-    docker build -t jose/postgresql/servercore-1709:latest  -f windowsservercore/Dockerfile .
-    docker build -t jose/postgresql/nanoserver-1709:latest  -f nanoserver/Dockerfile.1709 .
-    docker build -t jose/postgresql/nanoserver-insider:latest  -f nanoserver/Dockerfile .
+    docker build -t jose/servercore-1709/postgresql:latest  -f windowsservercore/Dockerfile .
+    docker build -t jose/nanoserver-1709/postgresql:latest  -f nanoserver/Dockerfile.1709 .
+    docker build -t jose/nanoserver-insider/postgresql:latest  -f nanoserver/Dockerfile .
 ```
 
 
