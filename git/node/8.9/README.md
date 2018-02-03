@@ -1,12 +1,12 @@
 # Node
 
-A Windows Server Core Docker container image with Node.js 6.9.5 and GIT.
+A Windows Server Core Docker container image with Node.js 8.9.x and GIT.
 
 
 ### Building new image starting from existing "windowsservercore & node" image, installing "git" on it
 
 ```
-docker build -t jose/node/servercore/git:latest -f Dockerfile .
+docker build -t jose/node/servercore/git:8.9 -f Dockerfile .
 ```
 
 
@@ -14,8 +14,8 @@ docker build -t jose/node/servercore/git:latest -f Dockerfile .
 ### Run it on HOST:
 
 ```
-    docker run -td --name node-git-1 -i jose/node/servercore/git:latest
-    docker run -td --name git-angular -i jose/node/servercore/git:latest
+    docker run -td --name node-git-1 -i jose/node/servercore/git:8.9
+    docker run -td --name git-angular -i jose/node/servercore/git:8.9
 ```
 
 

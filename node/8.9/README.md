@@ -16,3 +16,20 @@ A Windows Server Core Docker container image with Node.js 8.9.3 installed.
     docker build -t jose/servercore-insider/node-8.9 -f Dockerfile.insider .
 
 ```
+
+
+
+
+## Building WindowsCore version
+
+```
+docker build -t jose/node/servercore:8.9 -f Dockerfile .
+```
+
+
+### Building Nanoserverd version
+
+```
+docker build -t jose/node/nanoserver:8.9 -f nano/Dockerfile .
+```
+

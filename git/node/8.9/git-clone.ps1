@@ -7,7 +7,7 @@
 [string]$install_bower = $(Read-Host -Prompt 'Install Bower? (true/false)')
 [string]$install_bazel = $(Read-Host -Prompt 'Install Bazel? (true/false)')
 
-docker run -td --name $container_name --cpu-percent 50 -i jose/node/servercore/git:latest
+docker run -td --name $container_name --cpu-percent 50 -i jose/node/servercore/git:8.9
 docker exec -i $container_name git clone -b $branch $github_url
 
 if ($install_yarn.Equals("true")){
