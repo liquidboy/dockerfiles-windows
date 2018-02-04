@@ -34,12 +34,4 @@ Test it :
     get ip address of running container :  
 
         docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" keycloak
-
-    OpenDJ management tool :
-
-        ip   :
-        port : 4444
-        user : cn=Directory Manager
-        pwd  : Password123
-
 ```

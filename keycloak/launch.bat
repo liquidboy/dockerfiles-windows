@@ -1,1 +1,1 @@
-docker run -p 8080:8080 --name keycloak jose/keycloak/nanoserver-insider:3.4.2 c:\keycloak-3.4.2\bin\standalone.bat
+docker run -p 8080:8080 --name keycloak  jose/nanoserver-insider/keycloak:3.4.2 c:\keycloak-3.4.2.Final\bin\standalone.bat
