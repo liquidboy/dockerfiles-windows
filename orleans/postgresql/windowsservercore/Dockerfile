@@ -1,4 +1,4 @@
-FROM jose/postgresql/servercore-1709:latest
+FROM jose/servercore-1709/postgresql:latest
 
 ENV ORLEANS_PKG=orleans/ \
     ORLEANS_HOME=C:\\orleans
